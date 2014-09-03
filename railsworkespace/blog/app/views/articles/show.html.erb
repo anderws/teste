@@ -1,0 +1,15 @@
+	<div class="page-header">
+		<h2><%= @article.title %></h2>
+		<p><%= @article.text %></p>
+	</div>	
+	<div class="panel panel-default">
+	  <div class="panel-body">
+		<h2>Comments</h2>
+		<%= render @article.comments %>
+	  </div>
+	</div>
+	<h3>Add a comment</h3>
+	<%= render 'comments/form' %>
+	
+	
+	
